@@ -1,0 +1,183 @@
+ <style>
+    /* Gaya CSS yang diperlukan */
+    body {
+      margin: 0;
+      background-color: #333;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+   .floating-logo {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 9999;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #25D366;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+      header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+      .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .hero {
+      background-image: linear-gradient(to bottom right, #448aff, #2979ff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #fff;
+      color: #2979ff;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #222;
+    }
+
+    .services {
+      background-color: #222;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color:#fff;
+    }
+
+    .service-card {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      text-align: left;
+      width: 300px;
+    }
+
+    .service-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 0px
+    }
+
+    .service-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    img.fotodea {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+    }
+    }
+   </style>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOUJBLYFGJ-YRZNd4RflDqIoaFDuOk153keVWUTX8yIQ943oGv3iKeuABH&s=10" onclick="kirimPesan()" class="floating-logo" alt="WhatsApp Logo">
+<title> Layanan Fulwantrans </title>
+<section class="services">
+    <h2 id="kontol">Layanan Kami</h2>
+    <div class="service-card">
+      <img src="https://raw.githubusercontent.com/AhmadDaniWn/Profil-saya/main/layanan.jpg" alt="Mobil Travel">
+      <h3>Penyewaan Mobil Travel</h3>
+      <p>Kami menyediakan mobil travel berkualitas tinggi dengan fasilitas yang modern dan nyaman.</p>
+    </div>
+    <div class="service-card">
+      <h3>Sopir Profesional</h3>
+      <p>Kami juga menyediakan sopir profesional yang berpengalaman untuk perjalanan Anda.</p>
+    </div>
+    <div class="service-card">
+      <h3>Paket Perjalanan</h3>
+      <p>Nikmati paket perjalanan menarik ke berbagai destinasi populer bersama fulwantrans.</p>
+    </div>
+  </section>
+  <script>
+    function kirimPesan() {
+      var nomor = '+6285892928715'; // Ganti dengan nomor tujuan Anda
+      var pesan = 'Halo! Saya Minat Jasa Travel Anda'; // Ganti dengan pesan yang ingin Anda kirim
+
+      var url = 'https://api.whatsapp.com/send?phone=' + nomor + '&text=' + encodeURIComponent(pesan);
+
+      window.open(url);
+    }
+  </script>
+  <footer>
+    <p>&copy; 2023 fulwantrans - Penyewaan Mobil Travel</p>
+  </footer>
+</body>
+</html>
