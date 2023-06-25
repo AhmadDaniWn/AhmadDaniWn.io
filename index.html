@@ -4,10 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>fulwantrans - Penyewaan Mobil Travel</title>
+  <div class="line-animation"></div>
+  <div class="line-animation"></div>
    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOUJBLYFGJ-YRZNd4RflDqIoaFDuOk153keVWUTX8yIQ943oGv3iKeuABH&s=10" onclick="kirimPesan()" class="floating-logo" alt="WhatsApp Logo">
   <style>
     /* Gaya CSS yang diperlukan */
-    body {
+  
+ .line-animation {
+  width: 100%;
+  height: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.line-animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  animation: lineAnimation 8s linear infinite;
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+   body {
       margin: 0;
       background-color: #333
       padding: 0;
@@ -186,4 +216,6 @@
     }
   </script>
   </section>
+  <div class="line-animation"></div>
+  <div class="line-animation"></div>
   <br><br><br><br><br><br><br><br><br><br>

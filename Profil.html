@@ -2,6 +2,33 @@
 
  <style>
     /* Gaya CSS yang diperlukan */
+    .line-animation {
+  width: 100%;
+  height: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.line-animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  animation: lineAnimation 8s linear infinite;
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
     body {
       margin: 0;
       background-color: #333;
@@ -92,7 +119,7 @@
 
     .services {
       background-color: #222;
-      padding: 50px 0;
+      padding: 5px 0;
       text-align: center;
     }
 
@@ -149,24 +176,36 @@
       border-radius: 50%;
     }
     }
+    
    </style>
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOUJBLYFGJ-YRZNd4RflDqIoaFDuOk153keVWUTX8yIQ943oGv3iKeuABH&s=10" onclick="kirimPesan()" class="floating-logo" alt="WhatsApp Logo">
 <title> Layanan Fulwantrans </title>
+<div class="line-animation"></div>
+<div class="line-animation"></div>
+<div class="line-animation"></div>
+<div class="line-animation"></div>
 <section class="services">
     <h2 id="kontol">Layanan Kami</h2>
+    <div class="line-animation"></div>
+    <div class="line-animation"></div>
+    <div class="line-animation"></div>
+    <div class="line-animation"></div>
     <div class="service-card">
       <img src="https://raw.githubusercontent.com/AhmadDaniWn/Profil-saya/main/layanan.jpg" alt="Mobil Travel">
       <h3>Penyewaan Mobil Travel</h3>
       <p>Kami menyediakan mobil travel berkualitas tinggi dengan fasilitas yang modern dan nyaman.</p>
     </div>
+    <div class="line-animation"></div><div class="line-animation"></div><div class="line-animation"></div><div class="line-animation"></div>
     <div class="service-card">
       <h3>Sopir Profesional</h3>
       <p>Kami juga menyediakan sopir profesional yang berpengalaman untuk perjalanan Anda.</p>
     </div>
+    <div class="line-animation"></div><div class="line-animation"></div><div class="line-animation"></div><div class="line-animation"></div>
     <div class="service-card">
       <h3>Paket Perjalanan</h3>
       <p>Nikmati paket perjalanan menarik ke berbagai destinasi populer bersama fulwantrans.</p>
     </div>
+    <div class="line-animation"></div><div class="line-animation"></div><div class="line-animation"></div><div class="line-animation"></div>
   </section>
   <script>
     function kirimPesan() {
@@ -181,5 +220,6 @@
   <footer>
     <p>&copy; 2023 fulwantrans - Penyewaan Mobil Travel</p>
   </footer>
+  <div class="line-animation"></div><div class="line-animation"></div><div class="line-animation"></div><div class="line-animation"></div>
 </body>
 </html>
