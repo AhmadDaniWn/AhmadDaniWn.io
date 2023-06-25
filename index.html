@@ -150,6 +150,17 @@
       height: auto;
       border-radius: 50%;
     }
+    .neon-red {
+      color: #fff;
+      text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000;
+      animation: flicker-red 1.5s infinite alternate;
+    }
+
+        @keyframes flicker-red {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
   </style>
 </head>
 <body>
@@ -161,7 +172,7 @@
   </header>
   <section class="hero">
     <img src="https://raw.githubusercontent.com/AhmadDaniWn/Profil-saya/main/fotodea.jpg" alt="foto profil" class="fotodea">
-    <h1>Selamat datang di fulwantrans</h1>
+    <h1 class="neon-red">Selamat datang di fulwantrans</h1>
     <p>Layanan Penyewaan Mobil Travel Terpercaya</p>
     <a href="profil.html" class="btn">Lihat Layanan</a>
 <script>
